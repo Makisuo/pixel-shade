@@ -1,3 +1,6 @@
+import { Button } from "@pixelshade/ui/button"
+import Link from "next/link"
+
 export default async function Home() {
 	return (
 		<main>
@@ -24,25 +27,24 @@ export default async function Home() {
 								PixelShades components are built to work with Shadcn and your design out of the box.
 							</p>
 							<div className="mt-10 flex items-center justify-center gap-x-6">
-								<a
-									href="/"
-									className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-								>
-									Get started
-								</a>
-								<a href="/" className="text-sm font-semibold leading-6 text-gray-900">
-									Learn more <span aria-hidden="true">→</span>
-								</a>
+								<Link href="/">
+									<Button variant="default">Get started</Button>
+								</Link>
+								<Link href="/">
+									<Button variant="ghost">
+										Learn more <span aria-hidden="true">→</span>
+									</Button>
+								</Link>
 							</div>
 						</div>
 						<div className="mt-16 flow-root sm:mt-24">
-							<div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+							<div className="-m-2 rounded-xl bg-primary/5 p-2 ring-1 ring-inset ring-primary/10 lg:-m-4 lg:rounded-2xl lg:p-4">
 								<img
 									src="https://placehold.co/1200x700"
 									alt="App screenshot"
 									width={2432}
 									height={1442}
-									className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
+									className="rounded-md shadow-2xl ring-1 ring-primary/10"
 								/>
 							</div>
 						</div>
