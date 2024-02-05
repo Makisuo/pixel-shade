@@ -3,9 +3,10 @@ import "~/styles/globals.css"
 import { Inter } from "next/font/google"
 
 import { TRPCReactProvider } from "~/trpc/react"
-import { Container } from "~/components/container"
 import { Navbar } from "~/components/navbar"
 import { config } from "~/config"
+
+import { Container } from "@pixelshade/ui/container"
 
 const inter = Inter({
 	subsets: ["latin"],
