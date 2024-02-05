@@ -1,3 +1,3 @@
 {
-	"extends": "@pixel-shade/typescript-config/base.json"
+	"extends": "@pixelshade/typescript-config/base.json"
 }

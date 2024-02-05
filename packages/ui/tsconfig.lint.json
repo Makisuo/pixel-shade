@@ -1,5 +1,5 @@
 {
-	"extends": "@pixel-shade/typescript-config/react-library.json",
+	"extends": "@pixelshade/typescript-config/react-library.json",
 	"compilerOptions": {
 		"outDir": "dist"
 	},
