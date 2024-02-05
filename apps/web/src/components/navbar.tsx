@@ -16,11 +16,7 @@ export const Navbar = async () => {
 				<div className="flex lg:flex-1">
 					<Link href="/" className="-m-1.5 p-1.5">
 						<span className="sr-only">Pixelshade</span>
-						<img
-							className="h-8 w-auto"
-							src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-							alt=""
-						/>
+						<img className="h-8 w-auto" src="/favicon.svg" alt="" />
 					</Link>
 				</div>
 				<div className="hidden lg:flex lg:gap-x-12">
