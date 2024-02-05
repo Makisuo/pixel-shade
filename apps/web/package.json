@@ -30,14 +30,17 @@
     "superjson": "^2.2.1",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "@pixelshade/ui": "workspace:*"
   },
   "devDependencies": {
+    "@pixelshade/tailwind-config": "workspace:*",
+    "@pixelshade/tsconfig": "workspace:*",
     "@types/node": "^18.17.0",
     "@types/react": "^18.2.54",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.34",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },

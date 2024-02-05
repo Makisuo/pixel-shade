@@ -2,7 +2,7 @@ import Link from "next/link"
 import { getServerAuthSession } from "~/server/auth"
 
 const navigation = [
-	{ name: "Components", href: "#" },
+	{ name: "Components", href: "/components" },
 	{ name: "Blocks", href: "#" },
 	{ name: "Themes", href: "#" },
 ]

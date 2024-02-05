@@ -1,0 +1,26 @@
+{
+    "name": "@pixelshade/tailwind-config",
+    "version": "0.1.0",
+    "main": "index.ts",
+    "license": "MIT",
+    "files": [
+        "index.ts",
+        "postcss.js"
+    ],
+    "scripts": {
+        "clean": "rm -rf .turbo node_modules",
+        "lint": "eslint .",
+        "format": "prettier --check \"**/*.{js,ts,json}\"",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.17",
+        "postcss": "8.4.34",
+        "tailwindcss": "3.4.1"
+    },
+    "devDependencies": {
+        "@pixelshade/tsconfig": "workspace:*",
+        "tailwindcss-animate": "^1.0.7",
+        "typescript": "^5.3.3"
+    }
+}

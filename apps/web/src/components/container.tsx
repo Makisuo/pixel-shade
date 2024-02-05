@@ -1,5 +1,6 @@
 import { ReactElement, ReactNode } from "react"
-import { cn } from "~/lib/utils"
+
+import { cn } from "@pixelshade/ui"
 
 export const Container = ({
 	children,

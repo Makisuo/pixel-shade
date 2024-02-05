@@ -15,7 +15,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@pixelshade/typescript-config": "workspace:*",
+    "@pixelshade/tsconfig": "workspace:*",
     "dotenv": "^16.4.1",
     "drizzle-kit": "^0.20.14",
     "next-auth": "^4.24.5",
