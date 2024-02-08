@@ -26,10 +26,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`font-sans ${inter.variable}`}>
+			<body className={`font-sans ${inter.variable} min-h-screen`}>
 				<TRPCReactProvider>
 					<Navbar />
-					<Container>{children}</Container>
+					<Container className="mt-20">{children}</Container>
 				</TRPCReactProvider>
 			</body>
 		</html>
