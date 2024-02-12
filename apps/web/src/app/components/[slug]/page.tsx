@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import { getAllPComponents } from "~/pcomponents/util";
 import { notFound } from "next/navigation";
 
-interface ComponentDetailPageProps {
+interface PComponentDetailPageProps {
   params: {
     slug: string;
   };
 }
 
-async function getComponentFromParams(
-  params: ComponentDetailPageProps["params"]
+async function getPComponentFromParams(
+  params: PComponentDetailPageProps["params"]
 ) {
   return (await getAllPComponents()).find(
     (pcomponent) => pcomponent.slug === params.slug
@@ -18,34 +18,34 @@ async function getComponentFromParams(
 
 export async function generateMetadata({
   params,
-}: ComponentDetailPageProps): Promise<Metadata> {
-  const component = await getComponentFromParams(params);
+}: PComponentDetailPageProps): Promise<Metadata> {
+  const pcomponent = await getPComponentFromParams(params);
 
-  if (!component) {
+  if (!pcomponent) {
     return {};
   }
 
   return {
     openGraph: {
-      images: `/api/og/component?title=${component.name}`,
+      images: `/api/og/pcomponent?title=${pcomponent.name}`,
     },
-    title: component.name,
-    description: component.slug,
+    title: pcomponent.name,
+    description: pcomponent.slug,
   };
 }
 
 export async function generateStaticParams(): Promise<
-  ComponentDetailPageProps["params"][]
+  PComponentDetailPageProps["params"][]
 > {
   return (await getAllPComponents()).map((pcomponent) => ({
     slug: pcomponent.slug,
   }));
 }
 
-export default async function ComponentDetailPage({
+export default async function PComponentDetailPage({
   params,
-}: ComponentDetailPageProps) {
-  const pcomponent = await getComponentFromParams(params);
+}: PComponentDetailPageProps) {
+  const pcomponent = await getPComponentFromParams(params);
   console.log(params);
   if (!pcomponent) {
     notFound();
